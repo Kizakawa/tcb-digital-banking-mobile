@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutHomeScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F8">
+
+    <LinearLayout
+        android:id="@+id/layoutHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtAppBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TECHCOMBANK STUDY"
+            android:textColor="#D71920"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xin chào"
+            android:textColor="#222222"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp" />
+
+        <LinearLayout
+            android:id="@+id/cardBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EF2B2D"
+            android:padding="22dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtBalanceLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số dư khả dụng"
+                android:textColor="#FFECEC"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 VND"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/txtAccountNumberHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số tài khoản: Đang tải..."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/txtAccountTypeHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loại tài khoản: Đang tải..."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtHomeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#D71920"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnAccountInfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Xem thông tin tài khoản"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#222222"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/txtServiceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dịch vụ"
+            android:textColor="#222222"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Chuyển tiền"
+            android:textAllCaps="false"
+            android:textColor="#222222"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnBill"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Thanh toán hóa đơn"
+            android:textAllCaps="false"
+            android:textColor="#222222"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Lịch sử giao dịch"
+            android:textAllCaps="false"
+            android:textColor="#222222"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Thống kê tài chính"
+            android:textAllCaps="false"
+            android:textColor="#222222"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Đăng xuất"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D71920"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp" />
+
+    </LinearLayout>
+
+</ScrollView>

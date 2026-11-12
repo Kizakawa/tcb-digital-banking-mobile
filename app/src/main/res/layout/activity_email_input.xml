@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutEmailScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/layoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtBackEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textColor="#222222"
+            android:textSize="30sp"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/txtEmailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bổ sung email"
+            android:textColor="#222222"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="34dp" />
+
+        <TextView
+            android:id="@+id/txtEmailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin định danh đã được xác minh qua eKYC. Bạn chỉ cần bổ sung email để hoàn tất hồ sơ mở tài khoản."
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtIdentityBlockTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin định danh đã xác minh"
+            android:textColor="#222222"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/txtVerifiedFullNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/txtVerifiedFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#222222"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/txtVerifiedCccdLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số CCCD"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/txtVerifiedCccd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#222222"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/txtReadonlyNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nếu thông tin định danh chưa đúng, vui lòng quay lại bước xác minh danh tính và thực hiện lại."
+            android:textColor="#777777"
+            android:textSize="13sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/txtEmailLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#222222"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/edtOpenEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ví dụ: example@gmail.com"
+            android:inputType="textEmailAddress"
+            android:textSize="17sp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BBBBBB" />
+
+        <TextView
+            android:id="@+id/txtEmailMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#D71920"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnContinueEmail"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Tiếp tục"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#000000"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="26dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,59 @@
+# ==========================================
+# Android Studio / Gradle / Kotlin & Java
+# ==========================================
+*.iml
+.gradle/
+/local.properties
+local.properties
+/.idea/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+/build/
+build/
+app/build/
+**/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+.kotlin/
+*.apk
+*.aab
+*.ap_
+*.dex
+output-metadata.json
+
+# Keystore & Signing Secrets (NEVER commit)
+*.jks
+*.keystore
+keystore.properties
+
+# ==========================================
+# Backend (Node.js / Express / SQLite WAL)
+# ==========================================
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+**/*.log
+
+# Environment Variables & Secrets (NEVER commit)
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# SQLite Runtime Databases & Write-Ahead Logs (NEVER commit)
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+**/*.db
+**/*.db-wal
+**/*.db-shm
+**/*.sqlite
+**/*.sqlite3

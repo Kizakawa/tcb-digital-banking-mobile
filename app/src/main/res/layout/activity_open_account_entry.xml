@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutOpenEntry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EF2B2D"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txtLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌐 EN"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:padding="8dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="12dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/txtStudyLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="◆◆"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/txtBrandName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TECHCOMBANK STUDY"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnNewCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Tôi là khách hàng mới"
+        android:textAllCaps="false"
+        android:textColor="#222222"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnLoginExisting"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Đăng nhập"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#B51D1D"
+        android:layout_marginBottom="22dp" />
+
+</LinearLayout>

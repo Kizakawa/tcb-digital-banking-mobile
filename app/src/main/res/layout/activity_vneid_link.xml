@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutVneidLink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txtBackVneid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←"
+        android:textSize="28sp"
+        android:textColor="#222222"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/txtVneidIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▤✓"
+        android:textSize="78sp"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:id="@+id/txtVneidTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sẵn sàng liên kết với VNeID"
+        android:textColor="#222222"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:id="@+id/txtVneidContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Để làm và mở tài khoản, vui lòng cho phép Techcombank Study đọc thông tin ảnh chụp khuôn mặt, họ và tên, ngày sinh và số định danh của bạn với VNeID.\n\nTiếp đó, hãy xác nhận yêu cầu liên kết và chia sẻ thông tin trên ứng dụng VNeID."
+        android:textColor="#444444"
+        android:textSize="15sp"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginTop="16dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnAgreeVneid"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Đồng ý và liên kết với VNeID"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#000000"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnCancelVneid"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Hủy"
+        android:textAllCaps="false"
+        android:textColor="#222222"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="24dp" />
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutUsernameCreate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txtBackUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←"
+        android:textColor="#222222"
+        android:textSize="28sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/txtUsernameLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="◆◆"
+        android:textColor="#EF2B2D"
+        android:textSize="30sp"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:id="@+id/txtUsernameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng tạo tên đăng nhập"
+        android:textColor="#222222"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Tên đăng nhập"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="38dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BBBBBB" />
+
+    <TextView
+        android:id="@+id/txtUsernameRule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• Có 6–16 ký tự\n• Không bao gồm các ký tự đặc biệt\n• Không chứa khoảng trắng"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:lineSpacingExtra="6dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtUsernameMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#D71920"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnContinueUsername"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Tiếp tục"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#000000"
+        android:layout_marginBottom="24dp" />
+
+</LinearLayout>

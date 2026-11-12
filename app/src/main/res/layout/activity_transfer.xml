@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutTransferScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F8">
+
+    <LinearLayout
+        android:id="@+id/layoutTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:id="@+id/txtBackTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textColor="#222222"
+            android:textSize="30sp"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/txtTransferTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chuyển tiền"
+            android:textColor="#222222"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:id="@+id/txtTransferDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập số tài khoản người nhận để kiểm tra thông tin trước khi chuyển tiền."
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtReceiverAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Số tài khoản người nhận"
+            android:inputType="number"
+            android:textSize="17sp"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginTop="26dp" />
+
+        <Button
+            android:id="@+id/btnCheckReceiver"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Kiểm tra người nhận"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#222222"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/txtReceiverInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#222222"
+            android:textSize="15sp"
+            android:lineSpacingExtra="6dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:id="@+id/edtTransferAmount"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Số tiền"
+            android:inputType="numberDecimal"
+            android:textSize="17sp"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/edtTransferContent"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Nội dung chuyển tiền"
+            android:inputType="text"
+            android:textSize="17sp"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/txtTransferMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#D71920"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp" />
+
+        <Button
+            android:id="@+id/btnTransferMoney"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Chuyển tiền"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D71920"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="28dp" />
+
+    </LinearLayout>
+
+</ScrollView>

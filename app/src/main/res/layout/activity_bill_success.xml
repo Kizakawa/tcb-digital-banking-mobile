@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutBillSuccessScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/layoutBillSuccessRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtSuccessIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="✓"
+            android:textSize="42sp"
+            android:textColor="#FFFFFF"
+            android:background="#4CAF50"
+            android:layout_marginTop="48dp" />
+
+        <TextView
+            android:id="@+id/txtSuccessBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TCB STUDY"
+            android:textColor="#D71920"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:id="@+id/txtSuccessTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán thành công"
+            android:textColor="#222222"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtSuccessAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VND 50,000"
+            android:textColor="#222222"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtSuccessProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cho Internet ADSL FPT"
+            android:textColor="#222222"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/txtSuccessDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin hóa đơn"
+            android:textColor="#555555"
+            android:textSize="15sp"
+            android:lineSpacingExtra="6dp" />
+
+        <Button
+            android:id="@+id/btnFinishBill"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Hoàn thành"
+            android:textAllCaps="false"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="40dp" />
+
+    </LinearLayout>
+
+</ScrollView>

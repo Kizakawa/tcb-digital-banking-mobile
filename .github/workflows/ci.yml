@@ -1,0 +1,61 @@
+name: Full-Stack Banking CI & Security Suite
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  backend-security-e2e:
+    name: Backend AppSec & Ledger E2E (Node.js + SQLite WAL)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: banklite-api
+
+    steps:
+      - name: Checkout Monorepo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20 LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: banklite-api/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run 9-Scenario AppSec & Ledger E2E Suite
+        run: npm test
+
+  android-build:
+    name: Android Client Build & Unit Tests (Java + AGP 9.2)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Monorepo
+        uses: actions/checkout@v4
+
+      - name: Setup JDK 21 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "21"
+
+      - name: Accept Android SDK Licenses
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Build Debug APK & Run Unit Tests
+        run: |
+          chmod +x ./gradlew
+          ./gradlew assembleDebug testDebugUnitTest --no-daemon --stacktrace

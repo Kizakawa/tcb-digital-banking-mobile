@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutFaceGuide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txtBackFaceGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←"
+        android:textSize="28sp"
+        android:textColor="#222222"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/txtFaceGuideTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bắt đầu chụp ảnh để nhận diện khuôn mặt"
+        android:textColor="#222222"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/txtFaceIllustration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🙂"
+        android:textSize="120sp"
+        android:gravity="center"
+        android:layout_marginTop="36dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutFaceTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🙂\nGiữ khuôn mặt nằm trong khung hình"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🙂\nĐảm bảo không quá sáng hoặc quá tối"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🕶\nKhông đeo kính làm hay đội mũ"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnStartFaceVerify"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Bắt đầu"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#000000"
+        android:layout_marginBottom="24dp" />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutOnlineIntroScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF3F7">
+
+    <LinearLayout
+        android:id="@+id/layoutOnlineIntro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtBackOnlineIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="28sp"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <TextView
+            android:id="@+id/txtIntroIllustration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="▱  💳  ▱"
+            android:gravity="center"
+            android:textSize="56sp"
+            android:textColor="#222222" />
+
+        <TextView
+            android:id="@+id/txtOnlineIntroTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mở tài khoản 100% online&#10;Giao dịch miễn phí, đủ đã hết ý"
+            android:textColor="#222222"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="32dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutBenefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⑧&#10;Sáng tạo số tài khoản đẹp miễn phí"
+                android:textColor="#222222"
+                android:textSize="13sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🤝&#10;Số dư sinh lời tự động tới 4,1%/năm"
+                android:textColor="#222222"
+                android:textSize="13sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="▤&#10;Thẻ thanh toán được liên kết tức thì"
+                android:textColor="#222222"
+                android:textSize="13sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khi nhấn Đăng ký ngay, tôi xác nhận đã đọc, hiểu và đồng ý với Điều khoản và Điều kiện của Techcombank Study."
+            android:textColor="#555555"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginTop="90dp" />
+
+        <Button
+            android:id="@+id/btnStartOnlineOpen"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Đăng ký ngay"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#000000"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

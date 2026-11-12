@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutTransferSuccessScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F8">
+
+    <LinearLayout
+        android:id="@+id/layoutTransferSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtSuccessIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✓"
+            android:textColor="#0A8F3C"
+            android:textSize="54sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="44dp" />
+
+        <TextView
+            android:id="@+id/txtSuccessTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chuyển khoản thành công"
+            android:textColor="#222222"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtSuccessDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giao dịch đã được xử lý thành công trong hệ thống Techcombank Study."
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/cardSuccessInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                android:id="@+id/txtReceiverNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Người nhận"
+                android:textColor="#777777"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtSuccessReceiverName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtReceiverAccountLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số tài khoản"
+                android:textColor="#777777"
+                android:textSize="13sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/txtSuccessReceiverAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="#222222"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtAmountLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số tiền chuyển"
+                android:textColor="#777777"
+                android:textSize="13sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/txtSuccessAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 VND"
+                android:textColor="#D71920"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtContentLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nội dung"
+                android:textColor="#777777"
+                android:textSize="13sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/txtSuccessContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="#222222"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtBalanceAfterLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số dư sau giao dịch"
+                android:textColor="#777777"
+                android:textSize="13sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/txtSuccessBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 VND"
+                android:textColor="#222222"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDoneTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Hoàn thành"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D71920"
+            android:layout_marginTop="28dp" />
+
+        <Button
+            android:id="@+id/btnTransferAgain"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Chuyển tiếp"
+            android:textAllCaps="false"
+            android:textColor="#222222"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="28dp" />
+
+    </LinearLayout>
+
+</ScrollView>

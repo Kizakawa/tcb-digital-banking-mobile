@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutCccdGuideScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/layoutCccdGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtBackCccdGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="28sp"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txtCccdGuideTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xác thực CCCD"
+            android:textColor="#222222"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:id="@+id/txtCccdGuideSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bằng cách chụp ảnh 2 mặt của CCCD"
+            android:textColor="#444444"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/cardCccdNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF5E6"
+            android:padding="16dp"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lưu ý: Bạn sẽ cần chuẩn bị CCCD gắn chip để tiếp tục. Vì là app mô phỏng, hệ thống sẽ tự đọc dữ liệu mẫu."
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="▣        ▣"
+                android:textSize="42sp"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CCCD gắn chip                  Không có chip"
+                android:textColor="#555555"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtPhotoGuideTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hướng dẫn chụp ảnh"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="26dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="▭   Giữ CCCD nằm thẳng trong khung hình"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="▭   Đảm bảo ảnh không bị lóa, nhòe, mờ"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="▭   Sử dụng CCCD chính chủ"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_marginTop="18dp" />
+
+        <Button
+            android:id="@+id/btnCaptureCccd"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Chụp ảnh CCCD"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#000000"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

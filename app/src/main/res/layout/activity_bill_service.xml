@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutBillServiceScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+
+    <LinearLayout
+        android:id="@+id/layoutBillService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtBillServiceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tôi muốn thanh toán"
+            android:textColor="#222222"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/edtSearchService"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Tìm kiếm"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/btnElectricBill"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="⚡  Điện"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnWaterBill"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="💧  Nước"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnPhoneTopup"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="📱  Nạp tiền điện thoại"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnPostpaidMobile"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="☎  Cước di động trả sau"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnInternetBill"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="🌐  Mạng internet"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnTvBill"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="📺  Truyền hình"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnApartmentFee"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="🏢  Phí chung cư"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnInsuranceFee"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="🛡  Phí bảo hiểm"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

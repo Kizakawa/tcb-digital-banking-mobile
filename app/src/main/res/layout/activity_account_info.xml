@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutAccountInfoScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F8">
+
+    <LinearLayout
+        android:id="@+id/layoutAccountInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:id="@+id/txtBackAccountInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textColor="#222222"
+            android:textSize="30sp"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/txtAccountInfoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin tài khoản"
+            android:textColor="#222222"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp" />
+
+        <LinearLayout
+            android:id="@+id/cardAccountInfoHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EF2B2D"
+            android:padding="22dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/txtAccountInfoLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TECHCOMBANK STUDY"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtAccountInfoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên khách hàng"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/txtAccountInfoBalanceLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số dư khả dụng"
+                android:textColor="#FFEAEA"
+                android:textSize="13sp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/txtAccountInfoBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 VND"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtAccountInfoContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin tài khoản"
+            android:textColor="#222222"
+            android:textSize="15sp"
+            android:lineSpacingExtra="9dp"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/txtAccountInfoMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#D71920"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutStatisticsScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+
+    <LinearLayout
+        android:id="@+id/layoutStatisticsRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtBackStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textColor="#222222"
+            android:textSize="28sp"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/txtStatisticsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thống kê tài chính"
+            android:textColor="#222222"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/txtStatisticsSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng hợp giao dịch của tài khoản"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="22dp" />
+
+        <LinearLayout
+            android:id="@+id/cardBalanceSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số dư hiện tại"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtSummaryBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 VND"
+                android:textColor="#D71920"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardMoneyFlow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dòng tiền"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:id="@+id/txtTotalMoneyIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tổng tiền vào: 0 VND"
+                android:textColor="#168038"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTotalMoneyOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tổng tiền ra: 0 VND"
+                android:textColor="#D71920"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txtTransactionCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số giao dịch: 0"
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardDetailSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chi tiết theo loại giao dịch"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:id="@+id/txtTotalIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khoản thu: 0 VND"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtTotalTransferIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiền nhận: 0 VND"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/txtTotalExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khoản chi: 0 VND"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/txtTotalTransferOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chuyển tiền đi: 0 VND"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/txtTotalBillPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thanh toán hóa đơn: 0 VND"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtStatisticsMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#D71920"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>
