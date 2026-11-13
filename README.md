@@ -1,22 +1,21 @@
 <div align="center">
 
-# TCB Digital Banking — Full-Stack Mobile Banking Simulation
-
-**Hệ thống Ngân hàng Số Di động Full-Stack (Android Native Java + Node.js/SQLite WAL Core Ledger)**  
-*Thiết kế theo tiêu chuẩn toàn vẹn giao dịch ACID, chống chi tiêu kép (Anti-Double-Spending) và bảo mật đa tầng OWASP API Top 10 / MASVS.*
+# 🏦 TCB Digital Banking — Hệ Thống Ngân Hàng Số & Sổ Cái Giao Dịch Tài Chính
+### Full-Stack Mobile Banking Simulation (Android Native Java + Node.js/SQLite WAL Core Ledger)
 
 [![Full-Stack CI & Security Suite](https://github.com/Kizakawa/tcb-digital-banking-mobile/actions/workflows/ci.yml/badge.svg)](https://github.com/Kizakawa/tcb-digital-banking-mobile/actions/workflows/ci.yml)
-![Platform](https://img.shields.io/badge/Android-API%2024--36%20(Java)-3DDC84?logo=android&logoColor=white)
-![Backend](https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-339933?logo=nodedotjs&logoColor=white)
-![Database](https://img.shields.io/badge/Ledger-SQLite%20WAL%20(ACID)-003B57?logo=sqlite&logoColor=white)
-![Security](https://img.shields.io/badge/Security-AndroidKeyStore%20AES--256--GCM%20%7C%20OWASP-critical)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Database](https://img.shields.io/badge/Database-SQL_Ledger_WAL_(6_Tables_ACID)-003B57?logo=sqlite&logoColor=white)
+![Backend](https://img.shields.io/badge/Backend-Node.js_%7C_Express-339933?logo=nodedotjs&logoColor=white)
+![Platform](https://img.shields.io/badge/Android-API_24--36_(Java)-3DDC84?logo=android&logoColor=white)
+![Security](https://img.shields.io/badge/Security-AndroidKeyStore_AES--256--GCM_%7C_OWASP-critical)
 
-[Kiến trúc hệ thống](#kiến-trúc-hệ-thống-system-architecture) •
-[Điểm nhấn kỹ thuật & Bảo mật](#điểm-nhấn-kỹ-thuật--bảo-mật-engineering-highlights) •
-[Tính năng nghiệp vụ](#phạm-vi-nghiệp-vụ-end-to-end-product-scope) •
-[Kiểm thử tự động (9/9)](#kiểm-thử-bảo-mật--tích-hợp-tự-động-automated-qa) •
-[Hướng dẫn chạy nhanh](#hướng-dẫn-cài-đặt--chạy-dự-án-quickstart)
+*Hệ thống ngân hàng số và sổ cái tài chính thiết kế theo tiêu chuẩn toàn vẹn giao dịch ACID, chống chi tiêu kép (Anti-Double-Spending), đối soát thu/chi ròng theo kỳ và bảo mật đa tầng OWASP API Top 10 / MASVS.*
+
+[🎯 Tổng quan Nghiệp vụ](#tổng-quan-dự-án-executive-summary) •
+[💼 Điểm nhấn CSDL, BA & Triển khai](#-điểm-nhấn-năng-lực-thiết-kế-csdl-sql--phân-tích-nghiệp-vụ-ba--triển-khai) •
+[🏗️ Kiến trúc Hệ thống](#kiến-trúc-hệ-thống-system-architecture) •
+[🧪 Kiểm thử Tự động (9/9)](#kiểm-thử-bảo-mật--tích-hợp-tự-động-automated-qa) •
+[🚀 Hướng dẫn Cài đặt](#hướng-dẫn-cài-đặt--chạy-dự-án-quickstart)
 
 </div>
 
@@ -24,7 +23,7 @@
 
 ## Tổng quan dự án (Executive Summary)
 
-**TCB Digital Banking** là dự án mô phỏng toàn diện quy trình nghiệp vụ và kiến trúc kỹ thuật của một ứng dụng ngân hàng bán lẻ hiện đại (lấy cảm hứng từ trải nghiệm số của Techcombank Mobile). Thay vì chỉ dừng ở mức giao diện minh họa, dự án tập trung giải quyết các bài toán kỹ thuật cốt lõi trong lĩnh vực **FinTech & Core Banking**:
+**TCB Digital Banking** là dự án mô phỏng toàn diện quy trình nghiệp vụ và kiến trúc kỹ thuật của một ứng dụng ngân hàng bán lẻ hiện đại (lấy cảm hứng từ trải nghiệm số của Techcombank Mobile). Thay vì chỉ dừng ở mức giao diện minh họa, dự án tập trung giải quyết các bài toán kỹ thuật cốt lõi trong lĩnh vực **FinTech & Phần mềm Quản trị Tài chính**:
 
 - **Toàn vẹn sổ cái & Chống Race Condition (Zero Double-Spending):** Điều phối ghi tuần tự kết hợp khóa giao dịch tức thời `BEGIN IMMEDIATE TRANSACTION` trên **SQLite WAL**, kiểm tra số dư nguyên tử ngay trong câu lệnh `UPDATE` và chống gửi trùng giao dịch bằng khóa `idempotencyKey`.
 - **Bảo mật thiết bị đầu cuối theo chuẩn OWASP MASVS:** Mã hóa toàn bộ JWT Session và thông tin định danh nhạy cảm (CCCD, SĐT) bằng khóa phần cứng **AndroidKeyStore (`AES-256-GCM`)**; giữ mật khẩu khởi tạo hoàn toàn trên RAM khả biến (`transient`); chặn lưu lượng HTTP dạng rõ toàn cục và cô lập quyền truy cập từng `Activity`.
@@ -32,6 +31,16 @@
 - **Trải nghiệm sản phẩm khép kín (19 màn hình Android Native):** Bao phủ trọn vẹn hành trình khách hàng từ mở tài khoản trực tuyến **eKYC 8 bước** & định giá **Tài khoản Số đẹp** đến **Chuyển tiền nhanh 24/7**, **Thanh toán hóa đơn đa dịch vụ** và **Phân tích dòng tiền cá nhân**.
 
 > Tài liệu phân tích chuyên sâu về Mô hình mối đe dọa (Threat Model) và ma trận đối chiếu OWASP được trình bày tại **[SECURITY_ARCHITECTURE.md](SECURITY_ARCHITECTURE.md)**.
+
+---
+
+## 💼 Điểm Nhấn Năng Lực: Thiết Kế CSDL (SQL) • Phân Tích Nghiệp Vụ (BA) • Triển Khai
+
+| Góc Nhìn Đánh Giá | Giải Pháp Kỹ Thuật & Nghiệp Vụ Đã Triển Khai Trong Dự Án |
+| :--- | :--- |
+| **🗄️ Thiết Kế CSDL & Lập Trình SQL**<br>*(banklite-api/src/db.js)* | • **Lược đồ Sổ cái 6 Bảng Quan hệ (`users`, `user_sessions`, `otp_codes`, `transactions`, `bills`, `notifications`):** Đảm bảo tính nhất quán dữ liệu giữa số dư tài khoản và tổng phát sinh Nợ/Có trên sổ cái giao dịch.<br>• **Giao dịch Nguyên tử ACID & Chống Chi tiêu kép:** Mọi lệnh chuyển tiền/thanh toán hóa đơn đều chạy trong `BEGIN IMMEDIATE TRANSACTION`, sử dụng câu lệnh cập nhật có điều kiện `UPDATE users SET balance = balance - ? WHERE id = ? AND balance >= ?` và ràng buộc `UNIQUE(idempotency_key)` để loại bỏ hoàn toàn nguy cơ âm quỹ khi có nhiều truy vấn đồng thời.<br>• **Truy vấn Sổ cái Phân trang & Đối soát Thu/Chi (`GET /api/transactions/summary`):** Tổng hợp tổng thu, tổng chi và dòng tiền ròng theo kỳ/tháng bằng truy vấn SQL `SUM(CASE WHEN ...)`. |
+| **📋 Phân Tích Nghiệp Vụ**<br>*(Business Analysis - BA)* | • **Chuẩn hóa Quy trình Nghiệp vụ Tài chính Đa bước:** Đặc tả đầy đủ luồng nghiệp vụ định danh điện tử **eKYC 8 bước**, quy tắc định giá phí mở **Tài khoản Số đẹp** theo bậc, quy trình chuyển khoản 2 bước (*Khởi tạo kiểm tra điều kiện $\rightarrow$ Xác nhận OTP & Hạch toán*) và quy trình gạch nợ hóa đơn điện/nước/internet.<br>• **Kiểm soát Ràng buộc Nghiệp vụ:** Tự động ẩn danh thông tin nhạy cảm khi tra cứu người nhận (`098****321`), chặn tự chuyển khoản cho chính mình, khóa mã OTP sau 5 lần nhập sai và lưu thông báo biến động số dư tức thời. |
+| **🚀 Triển Khai & Kiểm Thử Tự Động**<br>*(Implementation & Automated QA)* | • **Kiểm thử Giao dịch Đồng thời & Bảo mật (`9/9 kịch bản E2E`):** Tự động giả lập tấn công gửi đồng thời các lệnh rút/chuyển tiền vượt số dư (`Promise.all`) để kiểm chứng cơ chế khóa giao dịch SQL và quy tắc nghiệp vụ.<br>• **Tích hợp CI/CD (`GitHub Actions`):** Tự động khởi chạy máy chủ CSDL, kiểm tra toàn bộ kịch bản nghiệp vụ API và biên dịch gói cài đặt Android trên mỗi lần cập nhật mã nguồn. |
 
 ---
 
@@ -264,10 +273,9 @@ npm start
 
 ---
 
-## Tác giả & Liên hệ
+<div align="center">
 
-- **Tác giả:** **Kizakawa**
-- **GitHub:** [https://github.com/Kizakawa](https://github.com/Kizakawa)
-- **Email:** [vivyngocnghech@gmail.com](mailto:vivyngocnghech@gmail.com)
+**Tác giả:** **Kizakawa (Đức Vương)** • 📧 [vivyngocnghech@gmail.com](mailto:vivyngocnghech@gmail.com) • Giấy phép: [MIT License](LICENSE)  
+[⬅️ **Quay lại Trang chủ Portfolio GitHub (@Kizakawa)**](https://github.com/Kizakawa)
 
-Dự án được phát hành theo giấy phép [MIT License](LICENSE).
+</div>
